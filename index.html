@@ -15,9 +15,9 @@
             <input type="text" class="search__input" placeholder="Введите слово для поиска">
         </div>
         <div class="navigation">
-            <div class="navigation__user">
-                <img src="img/avatar.svg" alt="Изображение пользователя" class="navigation__user-avatar">
-                <span class="navigation__user-name">Mateusz</span>
+            <div class="navigation__user user">
+                <img src="img/avatar.svg" alt="Изображение пользователя" class="user__avatar">
+                <span class="user__name">Mateusz</span>
             </div>
             <div class="navigation__panel">
                 <nav>
@@ -38,5 +38,173 @@
         </div>
     </div>
 </header>
+<main class="main">
+    <div class="container">
+        <aside class="menu-sidebar">
+            <div class="menu-sidebar__user user">
+                <img src="img/avatar.svg" alt="Изображение пользователя" class="user__avatar user__avatar--small">
+                <span class="user__name user__name--black">Mateusz Wierzbicki</span>
+            </div>
+
+            <nav class="menu-sidebar__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link nav__link--active">
+                            <svg class="nav__icon" width="24" height="24">
+                                <use href="img/icons.svg#profile"></use>
+                            </svg>
+                            <span class="nav__title">News Feed</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <svg class="nav__icon" width="24" height="24" >
+                                <use href="img/icons.svg#message"></use>
+                            </svg>
+                            <span class="nav__title">Messages</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <svg class="nav__icon" width="24" height="24">
+                                <use href="img/icons.svg#shop"></use>
+                            </svg>
+                            <span class="nav__title">Marketplace</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="menu-sidebar__shortcuts nav">
+                <span class="nav__header">Shortcuts</span>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="" class="nav__link">
+                            <svg class="nav__icon" width="24" height="24" >
+                                <use href="img/icons.svg#trophy"></use>
+                            </svg>
+                            <span class="nav__title">Product Design</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">
+                            <svg class="nav__icon" width="24" height="24" >
+                                <use href="img/icons.svg#trophy"></use>
+                            </svg>
+                            <span class="nav__title">UX & UI</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">
+                            <svg class="nav__icon" width="24" height="24" >
+                                <use href="img/icons.svg#trophy"></use>
+                            </svg>
+                            <span class="nav__title">Figma</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">
+                            <svg class="nav__icon" width="24" height="24" >
+                                <use href="img/icons.svg#trophy"></use>
+                            </svg>
+                            <span class="nav__title">Ant Design</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-sidebar__explore nav">
+                <span class="nav__header">Explore</span>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <svg class="nav__icon" width="24" height="24" >
+                                <use href="img/icons.svg#flag"></use>
+                            </svg>
+                            <span class="nav__title">Pages</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <svg class="nav__icon" width="24" height="24">
+                                <use href="img/icons.svg#groups"></use>
+                            </svg>
+                            <span class="nav__title">Groups</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <svg class="nav__icon" width="24" height="24" >
+                                <use href="img/icons.svg#home"></use>
+                            </svg>
+                            <span class="nav__title">Events</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-sidebar__more more">
+                <a href="#" class="more__link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="img/icons.svg#rectangle"></use>
+                    </svg>
+                    <span class="nav__title nav__title--link">See more...</span>
+                </a>
+            </div>
+        </aside>
+        <!-- /.menu-sidebar -->
+        <div class="main-feed">
+            <div class="create-post">
+                <article class="article article--create">
+                    <header class="article__header article__header--create">
+                        <h2 class="article__title">Create post</h2>
+                    </header>
+                    <div class="content">
+                        <main class="article__main article__main--create">
+                            <div class="article__avatar user user--ava">
+                                <img src="img/avatar.svg" alt="Изображение пользователя"
+                                     class="user__avatar user__avatar--big">
+                            </div>
+                            <div class="article__text" contenteditable="true">What’s on your mind, Mateusz?</div>
+                        </main>
+                        <footer class="article__footer article__footer--create">
+                            <button class="article__tag">
+                                <svg class="nav__icon" width="24" height="24" >
+                                    <use href="img/icons__footer.svg#picture"></use>
+                                </svg>
+                                <span class="nav__title">Photo/Video</span>
+                            </button>
+                            <button class="article__tag">
+                                <svg class="nav__icon" width="24" height="24" >
+                                    <use href="img/icons__footer.svg#friend"></use>
+                                </svg>
+                                <span class="nav__title">Tag friends</span>
+                            </button>
+                            <button class="article__tag">
+                                <svg class="nav__icon" width="24" height="24" >
+                                    <use href="img/icons__footer.svg#smile"></use>
+                                </svg>
+                                <span class="nav__title">Feeling/Activ...</span>
+                            </button>
+                            <button class="article__tag">
+                                <svg class="nav__icon" width="24" height="24" >
+                                    <use href="img/icons__footer.svg#ect"></use>
+                                </svg>
+                            </button>
+                        </footer>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!-- /.main-feed -->
+    </div>
+    <!-- /.container -->
+</main>
 </body>
 </html>
